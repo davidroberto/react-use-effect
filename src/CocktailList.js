@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import CocktailDetail from "./CocktailDetail";
-import { fetchCocktails } from "./utils/functions-utils";
 
 const CocktailList = () => {
 
@@ -9,7 +8,8 @@ const CocktailList = () => {
     useEffect(() => {
   
       (async () => {
-        const cocktailsData = await fetchCocktails();
+        const cocktailsResponse = await fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=');
+        const cocktailsData = await cocktailsResponse.json();
         setCocktails(cocktailsData.drinks);
       })();
   
