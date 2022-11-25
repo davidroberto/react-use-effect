@@ -16,13 +16,13 @@ const CocktailList = () => {
     }, []);
   
     return (
-        <main>
+        <section className="cocktail-list-container">
             {cocktails.map((cocktail) => {
                 return (
                     <CocktailDetail key={cocktail.idDrink} cocktail={cocktail}  />
                 )
             })}
-        </main>
+        </section>
     );
 }
 

@@ -13,11 +13,15 @@ const CocktailIngredients = (props) => {
       }
 
     return (
-        <ul>
+      <>
+        <p>Ingrédients : </p>
+        
+        <ul className="ingredient-list">
             {getIngredientsAsArray(props.cocktail).map((ingredient) => {
-                return (<li key={ingredient}>{ingredient}</li>)
+                return (<li className="ingredient" key={ingredient}>{ingredient}</li>)
             })}
         </ul>
+        </>
     );
 }
 

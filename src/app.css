@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.btn-random {
+    background-color: rgb(74, 192, 74);
+    color: white;
+    border: 0px;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.btn-random-container {
+    display: flex;
+    justify-content: center;
+}
+
+.random-cocktail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cocktail-info {
+    width: 33%;
+    text-align: center;
+}
+
+.random-cocktail-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cocktail-info-image {
+    width: 100%;
+}
+
+.random-cocktail-title {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.random-cocktail-container {
+    background-color: lightsalmon;
+}
+
+.ingredient {
+    list-style-type: none;
+}
+
+.ingredient-list {
+    padding-left: 0px;
+}
+
+.cocktail-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
